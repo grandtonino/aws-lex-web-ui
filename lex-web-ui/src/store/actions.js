@@ -538,7 +538,7 @@ export default {
           console.error('error in postTextMessage', error);
           context.dispatch(
             'pushErrorMessage',
-            'Sorry, I was unable to process your message. Try again later.' +
+            'Sorry, You either have timed out or not logged in. Refresh site, log in if needed, and try again.' +
             `${errorMessage}`,
           );
         } else {
